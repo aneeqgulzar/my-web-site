@@ -1,5 +1,9 @@
 function checkpalendrome(inputstring){
- 
+    if(inputstring.length>10){
+        document.getElementById('result').innerHTML="<h1>STRING LENGTH BIGGER THAN 10 NOT ALLOWED</h1>";
+    }
+    
+    else{
     let inputsecond=inputstring.toLowerCase();
     var reversestringarray=[];
 
@@ -19,6 +23,6 @@ function checkpalendrome(inputstring){
     else{
         document.getElementById('result').innerHTML="<h1>THIS IS NOT A PALENDROME</h1>";
 
-    
+    }
 }
 }
